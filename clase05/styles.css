@@ -1,22 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  background: #111111;
-  color: #ffffff;
-  font-family: Arial, sans-serif;
-  padding: 20px;
+    background: #e8f0fe;
+    font-family: Arial, sans-serif;
+    color: #222;
+    padding: 30px;
 }
 
-h1 {
-  color: #C9A227; 
+header {
+    background: #3f83e7;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
 }
 
-h2 {
-  color: #A8A9AD; 
+header h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+}
+
+section {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+section h2 {
+    color: #3f83e7;
+    margin-bottom: 20px;
 }
 
 .tarea {
-  background: #1E1E1E;
-  border: 1px solid #A8A9AD;
-  border-radius: 8px;
-  padding: 10px 14px;
-  margin-bottom: 10px;
+    background: #f1f5ff;
+    border-left: 5px solid #3f83e7;
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.tarea h3 {
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.tarea p {
+    color: #666;
+    font-size: 15px;
+}
+
+body > p {
+    text-align: center;
+    margin-top: 25px;
+}
+
+body > p a {
+    color: #3f83e7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body > p a:hover {
+    color: #174ea6;
 }

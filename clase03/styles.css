@@ -1,22 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  background: #111111;
-  color: #ffffff;
-  font-family: Arial, sans-serif;
-  padding: 20px;
+    background: #050505;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 30px;
 }
 
 h1 {
-  color: #C9A227; 
+    color: #e31b23;
+    font-size: 45px;
+    margin-bottom: 30px;
+    text-shadow: 3px 3px #174ea6;
 }
 
-h2 {
-  color: #A8A9AD; 
+/* Galería */
+figure {
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px;
+    padding: 12px;
+    background: #111827;
+    border: 3px solid #e31b23;
+    border-radius: 12px;
+    box-shadow: 0 0 12px #174ea6;
 }
 
-.tarea {
-  background: #1E1E1E;
-  border: 1px solid #A8A9AD;
-  border-radius: 8px;
-  padding: 10px 14px;
-  margin-bottom: 10px;
+figure img {
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+figcaption {
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Tabla */
+table {
+    margin: 40px auto;
+    border-collapse: collapse;
+    background: #111827;
+    min-width: 600px;
+}
+
+th {
+    background: #e31b23;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    border: 1px solid #174ea6;
+    padding: 12px;
+}
+
+tr:hover {
+    background: #174ea6;
+}
+
+/* Enlace */
+a {
+    color: #e31b23;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #174ea6;
 }

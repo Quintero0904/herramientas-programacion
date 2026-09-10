@@ -1,22 +1,179 @@
-body {
-  background: #111111;
-  color: #ffffff;
-  font-family: Arial, sans-serif;
-  padding: 20px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1 {
-  color: #C9A227; 
+body {
+    background: #050505;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    background: #111827;
+    border: 2px solid #e31b23;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#app-titulo {
+    color: #e31b23;
+    font-size: 38px;
+    text-shadow: 2px 2px #174ea6;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #cccccc;
+}
+
+/* Menú */
+nav {
+    background: #111827;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    background: #174ea6;
+    padding: 10px 15px;
+    border-radius: 7px;
+}
+
+nav a:hover {
+    background: #e31b23;
+}
+
+/* Contenido */
+main {
+    max-width: 900px;
+    margin: auto;
+}
+
+section,
+aside {
+    background: #111827;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    border: 2px solid #174ea6;
 }
 
 h2 {
-  color: #A8A9AD; 
+    color: #e31b23;
+    margin-bottom: 20px;
 }
 
-.tarea {
-  background: #1E1E1E;
-  border: 1px solid #A8A9AD;
-  border-radius: 8px;
-  padding: 10px 14px;
-  margin-bottom: 10px;
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    color: #dddddd;
+}
+
+input,
+textarea,
+select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #555;
+    background: #222;
+    color: white;
+    font-size: 15px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border: 2px solid #e31b23;
+}
+
+/* Botón */
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background: #e31b23;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #174ea6;
+}
+
+/* Tareas */
+#lista article {
+    background: #1b263b;
+    border-left: 5px solid #e31b23;
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 8px;
+}
+
+#lista article h3 {
+    color: white;
+    margin-bottom: 8px;
+}
+
+#lista article p {
+    color: #bbbbbb;
+}
+
+/* Resumen */
+aside {
+    border-color: #e31b23;
+}
+
+aside p {
+    color: #cccccc;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    color: #888;
+    border-top: 2px solid #174ea6;
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #app-titulo {
+        font-size: 30px;
+    }
 }
